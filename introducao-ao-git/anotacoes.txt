@@ -1,0 +1,9 @@
+#Anotações
+
+> Link para um tutorial sobre git:
+	- https://www.atlassian.com/br/git/tutorials/saving-changes
+
+> Link para download do git:
+	- https://gitforwindows.org/
+
+
