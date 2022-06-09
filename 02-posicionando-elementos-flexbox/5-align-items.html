@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Flex flow</title>
+  <style>
+    .container {
+      border: 1px solid black;
+      max-width: 400px;
+      margin: 0;
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      background-color: blueviolet;
+      margin: 5px;
+      text-align: center;
+      color: white;
+      text-align: center;
+
+      flex: 1;
+    }
+
+    .default {
+      align-items: center
+    }
+
+    .stretch {
+      align-items: stretch;
+    }
+
+    .flex-start {
+      align-items: flex-start;
+    }
+
+    .flex-end {
+      align-items: flex-end;
+    }
+
+    .baseline {
+      align-items: baseline;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .central {
+      height: 300px;
+      justify-content: center;
+    }
+
+    .central .item {
+      /* remove as propriedades relacionadas ao flex */
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Row</h1>
+    <h3>align-items: center</h3>
+    <section class="container default ">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- stretch -> cresce de acordo com o maior item -->
+    <h3>align-items: stretch</h3>
+    <section class="container stretch ">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- alinha ao topo -->
+    <h3>align-items: flex-start</h3>
+    <section class="container flex-start">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- alinha ao end -->
+    <h3>align-items: flex-end</h3>
+    <section class="container flex-end ">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- alinha de acordo com a a linha base da tipografria do item -->
+    <h3>align-items: baseline</h3>
+    <section class="container baseline ">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+  </div>
+  <div>
+    <h1>Column</h1>
+    <h3>align-items: center</h3>
+    <section class="container default column">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- stretch -> cresce de acordo com o maior item -->
+    <h3>align-items: stretch</h3>
+    <section class="container stretch column">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- alinha ao topo -->
+    <h3>align-items: flex-start</h3>
+    <section class="container flex-start column ">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- alinha ao end -->
+    <h3>align-items: flex-end</h3>
+    <section class="container flex-end column ">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+    <!-- alinha de acordo com a a linha base da tipografria do item -->
+    <h3>align-items: baseline</h3>
+    <section class="container baseline column">
+      <div class="item">item 1</div>
+      <div class="item">Lorem Ipsum is simply</div>
+      <div class="item">outro item 3</div>
+    </section>
+
+    <!-- alinhamento no centro da tela -->
+    <h3>alinhamento no centro da tela</h3>
+    <section class="container default central ">
+      <div class="item">item 1</div>
+    </section>
+  </div>
+
+</body>
+
+</html>

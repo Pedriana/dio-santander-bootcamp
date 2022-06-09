@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align content</title>
+  <style>
+    .container {
+      display: flex;
+      border: 1px solid black;
+      max-width: 300px;
+      height: 600px;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      background-color: blueviolet;
+      padding: 0 5px;
+      text-align: center;
+      color: white;
+      flex: 1;
+      margin: 5px;
+    }
+
+    .default {
+      align-content: stretch;
+    }
+
+    .center {
+      align-content: center;
+    }
+
+    .flex-start {
+      align-content: flex-start;
+    }
+
+    .flex-end {
+      align-content: flex-end;
+    }
+
+    .space-around {
+      align-content: space-around;
+    }
+
+    .space-between {
+      align-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>align-content: stretch (default)</h3>
+  <div class="container default">
+    <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    <div class="item">Lorem Ipsum is simply dummy </div>
+    <div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+    <div class="item">Lorem text of the .</div>
+    <div class="item">Lorem Ipsum </div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+  </div>
+  <h3>align-content: stretch (default)</h3>
+  <div class="container center">
+    <div class="item">Lorem Ipsum is simply and typesetting industry.</div>
+    <div class="item">Lorem Ipsum is simply dummy </div>
+    <div class="item">Lorem Ipsum is simply</div>
+    <div class="item">Lorem text of the .</div>
+    <div class="item">Lorem Ipsum </div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+  </div>
+  <h3>align-content: flex-start </h3>
+  <div class="container flex-start">
+    <div class="item">Lorem Ipsum is simply .</div>
+    <div class="item">Lorem Ipsum is simply dummy </div>
+    <div class="item">Lorem Ipsum is simply</div>
+    <div class="item">Lorem text of the .</div>
+    <div class="item">Lorem Ipsum </div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+  </div>
+  <h3>align-content: flex-end </h3>
+  <div class="container flex-end">
+    <div class="item">Lorem Ipsum is simply .</div>
+    <div class="item">Lorem Ipsum is simply dummy </div>
+    <div class="item">Lorem Ipsum is simply</div>
+    <div class="item">Lorem text of the .</div>
+    <div class="item">Lorem Ipsum </div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+  </div>
+  <h3>align-content: space-around </h3>
+  <div class="container space-around">
+    <div class="item">Lorem Ipsum is simply .</div>
+    <div class="item">Lorem Ipsum is simply dummy </div>
+    <div class="item">Lorem Ipsum is simply</div>
+    <div class="item">Lorem text of the .</div>
+    <div class="item">Lorem Ipsum </div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+  </div>
+  <h3>align-content: space-between </h3>
+  <div class="container space-between">
+    <div class="item">Lorem Ipsum is simply .</div>
+    <div class="item">Lorem Ipsum is simply dummy </div>
+    <div class="item">Lorem Ipsum is simply</div>
+    <div class="item">Lorem text of the .</div>
+    <div class="item">Lorem Ipsum </div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+    <div class="item">Lorem Ipsum is simply dummy</div>
+  </div>
+
+</body>
+
+</html>
